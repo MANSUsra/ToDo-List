@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./asset/jordan-whitt-qGQNmBE7mYw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.568);
+    padding: 20px;
+    z-index: 1;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 100px; 
+    padding-top: 150px;
+    width: 100%;
+    text-align: center;
+}
+
+#datetime {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    text-align: center;
+} 
+
+#datetime:hover{
+    transform: scale(1.2);
+}
+
+h2{ 
+    color: green;
+    text-align: center;
+    margin: 10px 0 ;  
+}
+
+p{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(65, 42, 1);
+}
+
+
+p:hover{
+    transform: scale(1.2);
+}
+
+#addTask{
+    height: 40px;
+    border: 1px solid rgb(255, 187, 0);
+    margin-bottom: 10px;
+}
+
+#submitTask{
+    height: 40px;
+    width: 30px;
+    border: none;
+    border: 1px solid rgb(255, 187, 0);
+    cursor: pointer;
+    background-color: white;
+    color:  rgb(65, 42, 1);
+    transition: transform 0.3s ease;
+}
+
+#submitTask:hover{
+    transform: scale(1.1);
+    border: 2px solid green;
+    color: white;
+    background-color: green;
+}
+
+#searchTask{
+    height: 40px;
+    border: 1px solid rgb(255, 187, 0);
+    margin-bottom: 10px;
+}
+
+#searchBtn{
+    height: 40px;
+    width: 30px;
+    border: 1px solid rgb(255, 187, 0);
+    cursor: pointer;
+    background-color: white;
+    color:  rgb(65, 42, 1);
+    transition: transform 0.3s ease;
+    
+}
+
+#searchBtn:hover{
+    transform: scale(1.1);
+    border: 2px solid green;
+    color: white;
+    background-color: green;
+}
+
+/*Container of the list */
+#tasksList{
+    background-color: white;
+    border: 1px solid rgb(255, 187, 0);
+    width: 50%;
+    max-height: 40vh;
+    overflow-y: auto;
+    margin-bottom: auto;    
+}
+/*list*/
+.task-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.task-name{
+    padding: 10px;
+    height: 40px;
+    font-size: 16px;
+    color:  rgb(65, 42, 1);
+}
+
+.buttons{
+    height: 40px;
+    width: 30px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    color:  rgb(65, 42, 1);
+    transition: transform 0.3s ease;
+    padding: 5px;
+    transition: transform 0.3s ease;
+    background-color: white;
+}
+
+.buttons:hover{
+    transform: scale(1.1);
+    border: 2px solid green;
+    color: white;
+    background-color: green;
+}
+
+.task-done {
+    text-decoration: line-through;
+    color: green;
+}
+
+  
+
+  
+  

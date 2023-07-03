@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+    <title>My To Do List</title>
+</head>
+<body>
+    
+    
+        <header>
+            <span id="datetime"></span>
+            <h2>Slay your To Do List</h2>
+            <p><em>"Focus on being productive instead of busy."</em> - Tim Ferriss</p>
+        </header>
+
+        <main>
+            <form id="toDo">
+                <input type="text" id="addTask" placeholder="task you want to slay...">
+                <button type="submit"  id="submitTask"><i class="fa-solid fa-plus"></i></button>
+            </form>
+
+            <form id="search">
+                <input type="text" id="searchTask" placeholder="search a task...">
+                <button type="submit" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+            <ul id="tasksList">
+                
+            </ul>
+        </main>
+    <script src="script.js"></script>
+
+</body>
+</html>
